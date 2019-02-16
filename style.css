@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  direction: default;
+}
+
+/* LEFT NAV CONTENT */
+
+.siteheader{
+  padding: 10px;
+  background-color: #56727c;
+  display: flex;
+  justify-content: space-between;
+}
+
+.siteheader__section{
+  display: flex;
+  align-items: center;
+}
+
+.siteheader__item{
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+.siteheader__item +.siteheader__item{
+  margin-left: 5px;
+}
+
+.siteheader__btn{
+  cursor: pointer;
+  color: #d9e9ef;
+}
+
+.siteheader__item.active{
+  color: #fff;
+  background-color: #415f69;
+  border-radius: 4px;
+
+}
+
+.siteheaderlogo{
+  font-size: 20px;
+  line-height: 0;
+  color: white;
+}
+
+@media all and (max-width:400px){
+  .siteheader__item{
+      font-size: 10px;
+  }
+}
+
+/* MIDDLE ICON SECTION */
+
+#list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px
+}
+
+.feature-list-item{
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.feature-list-item + .feature-list-item{
+  border-top: 1px solid #d7dbdd;
+}
+
+.icon , .description{
+  padding: 5px 10px;
+}
+
+.icon{
+  font-size: 50px;
+  line-height: 0;
+}
+
+.icon>i{
+  color: #bcd2ba;
+}
+
+.description{
+  font-size: 12px;
+  color: #86969c;
+}
+
+
+/* MIDDLE ICON SECTION */ 
+#text-card{
+  background-color: #56727c;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.primary{
+  display: flex;
+  justify-content: center;
+}
+
+.primary p{
+  color: #fff;
+  font-family: sans-serif;
+  border: 1px solid #678690;
+  padding: 10px;
+  text-align: justify;
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heart-icon{
+  align-self: center;
+  font-size: 40px;
+  padding: 3px;
+  color: #BCD2BA;
+}
+
+/* On screens that are 700px or less, set the background color to gray-  */ 
+
+@media all and (max-width: 700px){
+  body{
+    background-color: gray; 
+  }
+  .primary{
+      flex-direction: column;
+  }
+}
